@@ -14,7 +14,7 @@ export default defineConfig({
         entryFileNames: 'js/[name].[hash].js',
         assetFileNames: 'assets/[name].[hash].[ext]',
         manualChunks: {
-          reactVendor: ['react', 'react-dom', 'react-router-dom'],
+          reactVendor: ['react', 'react-dom'],
         },
       },
     },
