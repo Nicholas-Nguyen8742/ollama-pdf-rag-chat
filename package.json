@@ -5,6 +5,9 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
+    "build": "pnpm run --stream -r build",
+    "build:server": "pnpm --filter ./packages/server run build",
+    "build:web": "pnpm --filter ./packages/web run build",
     "start:server": "pnpm --filter ./packages/server run watch",
     "start:web": "pnpm --filter ./packages/web run dev"
   },
